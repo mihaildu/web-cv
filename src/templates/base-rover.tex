@@ -1,0 +1,137 @@
+%-------------------------
+% Rover Resume - Base Template
+% Link: https://github.com/subidit/rover-resume
+%------------------------
+
+\documentclass[11pt]{article} % fontsize 10pt/11pt/12pt
+
+\usepackage[margin=1in, a4paper]{geometry}
+\setcounter{secnumdepth}{0} % remove section numbering
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*0}{*0} % remove vertical spacing above and below
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+\titleformat*{\subsubsection}{\large\itshape}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep,left=0pt .. \parindent}
+\pagestyle{empty} % remove page number
+\pdfgentounicode=1
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=blue]{hyperref}
+\usepackage{fontawesome5}
+
+
+\begin{document}
+
+\begin{center}
+	\begin{minipage}{0.55\textwidth} % 0.5
+		{\Huge\bfseries
+			MIHAIL DUNAEV
+		} \\ \medskip
+		Senior Software Engineer
+	\end{minipage} \hfill
+	\begin{minipage}{0.44\textwidth}
+		\raggedleft
+		\textbf{Contact} \\[4pt]
+		\href{mailto:mihail.dunaev91@gmail.com}{mihail.dunaev91@gmail.com} \\
+		+44 7763 539849 \\ +40 753 422 630 \\
+		\href{https://linkedin.com/in/mihail-dunaev-02b253115}{\faLinkedin\ mihail-dunaev-02b253115} \\
+		\href{https://github.com/mihaildu}{\faGithub\ mihaildu}
+	\end{minipage}
+\end{center}
+
+\section{About Me} % Who Am I
+%=================%
+\begin{minipage}{1.0\textwidth}
+	Senior Software Engineer with 10 years experience. I've done it all, from low level coding in C/C++ to high level frontend interfaces with React.
+	TODO add more
+\end{minipage}
+
+\section{Skills \& Interests}
+%===========================%
+\begin{description}[itemsep=0pt]
+	\item[Programming Languages] Javascript/Typescript, Python, C/C++, Java
+	\item[Frontend] React, Next.js, Vue.js
+	\item[Backend] Node.js, Nest.js, Express, PostgreSQL, MongoDB
+	\item[Mobile] React Native, Fastlane
+	\item[Infra] AWS (S3, EC2, RDS, EKS, Lambda)
+	\item[AI] Claude Code, Skills, Agents, OpenAI API
+\end{description}
+
+\section{Experience}
+%=================%
+\subsection{Software Engineering Team Lead \hfill Feb 2023 - Present}
+\subsubsection{Crowded Technologies \hfill  Remote} % Jul 2026
+\begin{itemize}
+	\item Led a team
+	\item Stripe contribution
+	\item Etc.
+\end{itemize}
+
+% move to other relevant positions
+\subsection{Full Stack Software Engineer \hfill Jan 2022 - May 2022}
+\subsubsection{Contentsquare \hfill Remote}
+\begin{itemize}
+	\item Implemented team roles for the platform and added a new role “Super Admin”
+	\item Migrated packages on the frontend to newer versions (Vue.js, Vuex)
+	\item Fixed a lot of problems with the backend services (Nest.js, Node.js, PostgreSQL, AWS)
+\end{itemize}
+
+\subsection{Full Stack Software Engineer \hfill May 2019 - Dec 2021}
+\subsubsection{Winter Circle  \hfill London, United Kingdom}
+\begin{itemize}
+	\item Platform migration from Angular.js 1.x to React, made it 2x as fast
+	\item Django Admin (Python) alternative in Javascript (React Admin, Hasura, GraphQL, Node.js, PostgreSQL); open sourced package we used internally at https://github.com/mihaildu/ra-resource-aggregator
+	\item Static websites: https://www.marlinhawk.com/, https://www.wintercircle.co/ (Gatsby, React, Netlify \& Netlify-CMS, Node.js)
+	\item Platform that generates reports with ideal candidates for clients (echarts, Thrive CRM, PostgreSQL, GraphQL, Next.js, React, Node.js, Heroku); wrote a GraphQL server that merges inconsistent data from a CRM and a database
+	\item Managed a team with one other person
+	\item Learned how to manage projects, plan ahead and estimate how long it’s going to take
+\end{itemize}
+
+\subsection{Full Stack Software Engineer \hfill November 2018 - April 2019}
+\subsubsection{Migacore Technologies  \hfill London, United Kingdom}
+\begin{itemize}
+	\item Website with optimal price for flight tickets for Lufthansa (React, Redux, Flask, AWS)
+	\item Refactored the web crawling code base (Python, Scrapy)
+	\item Implemented a basic proxy crawl alternative to use internally (Python, AWS)
+\end{itemize}
+
+\subsection{Full Stack Software Engineer \hfill February 2018 - October 2018}
+\subsubsection{YLD Limited  \hfill London, United Kingdom}
+\begin{itemize}
+	\item Open source submission and peer review platform for academic papers (React, GraphQL, Apollo, PostgreSQL, PubSweet)
+	\item Wrote frontend components, part of the GraphQL layer, solved problems with docker containers running inside Nginx
+	\item Source code available at https://github.com/elifesciences/elife-xpub
+\end{itemize}
+
+\subsection{Other Relevant Work \hfill November 2014 - February 2018}
+\begin{itemize}
+	\item Software Engineer at SwiftServe Limited (C++)
+	\item Software Engineer at VirtualMetrix Design (C)
+	\item Freelancer (Javascript, Python, MATLAB)
+\end{itemize}
+
+\section{Education}
+%=================%
+\subsection{The University of Edinburgh $|$ {\normalfont\itshape MSc. in Artificial Intelligence} \hfill 2015 - 2016}
+\subsection{Politehnica University of Bucharest $|$ {\normalfont\itshape BSc. in Computer Science} \hfill 2010 - 2014}
+
+\vspace{10pt}
+\section{Awards}
+%===============================%
+\subsection{Man AHL Coder Prize Runner-Up \hfill February 2016}
+\noindent\begin{minipage}{1.0\textwidth}
+	I finished 2nd in the Man AHL Coder Prize contest. Contestants had to write bots for the game of Hexplode to battle against each other. The contest was for students from UK and Ireland.
+\end{minipage}
+
+\section{Projects}
+%=================
+\subsection{Introduction to Fitness $|$ \normalfont\textit{https://github.com/mihaildu/fitness} \hfill 2022}
+\begin{itemize}
+  \item Open source book on fitness
+\end{itemize}
+\subsection{Petbook $|$ \normalfont\textit{https://github.com/mihaildu/petbook} \hfill 2017}
+\begin{itemize}
+  \item Minimal social network using React.js + Flux and Express with MongoDB
+\end{itemize}
+
+\end{document}
