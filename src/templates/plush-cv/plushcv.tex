@@ -1,0 +1,171 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Mihail}{Dunaev}{Senior Software Engineer}{\contactline{\href{https://github.com/mihaildu}{mihaildu}}{\href{https://linkedin.com/in/mihail-dunaev-02b253115}{mihail-dunaev-02b253115}}{\href{mailto:mihail.dunaev91@gmail.com}{mihail.dunaev91@gmail.com}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{About Me}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{minipage}{1.0\textwidth}
+Senior Software Engineer with more than 10 years of experience across the full stack — from low-level C/C++ systems work (load balancers, performance-critical code) to modern web frontends (React, Vue) and mobile. Comfortable operating at any layer of the stack, with a track record of ramping up on new technologies quickly and delivering. Combines hands-on technical depth with team leadership experience, and a genuine enjoyment of hard problems and open-source contribution. Passionate about strong engineering communities — hosts a regular tech meetup and enjoys sharing knowledge through talks, writing, and mentorship
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Crowded Technologies}
+\descript{| Software Engineering Team Lead}
+\location{Feb 2023 – Present | Remote}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item Led and mentored a team of 3 engineers, driving professional growth through regular 1:1s and structured feedback
+\item Implemented Tap to Pay functionality in the app, contributing upstream PRs to Stripe's open-source SDK — which was still in beta and not fully functional on iOS — to unblock our launch 
+\item Developed the \href{https://developer.crowdedfinance.com/}{\textbf{Partners SDK}}, including custom web components and iframes for client integration, and whitelabeled the Crowded portal for partner use — collaborating directly with partners to gather and define requirements  
+\item Led the initiation of a Vue-to-React migration, designing a bottom-up strategy using web components, a pub/sub system for cross-framework data sharing, custom Webpack configuration for code sharing, and a new test infrastructure to support incremental rollout
+\item Implemented biometric authentication for the mobile app, spanning both mobile and backend development, enabling users to securely authenticate via Face ID/Touch ID (or fingerprint, depending on platform)
+\item Implemented a Fastlane-based CI/CD pipeline for the mobile team, reducing release time from several hours to under 30 minutes
+\item Improved team velocity and code quality by introducing Storybook, a test infrastructure, and a Notion-based design system — reducing code duplication and bugs while speeding up development
+\item Supported technical hiring for developer and QA roles, working closely with external recruitment agencies to source and evaluate candidates
+\item Fostered engineering culture through weekly Gather events featuring technical presentations, and contributed to engineering advocacy via technical \href{https://medium.com/crowdedbanking/predicting-user-behavior-correcting-user-inputs-with-levenshtein-distance-f2a3e707e844}{\textbf{blog writing}}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Winter Circle}
+\descript{| Full Stack Software Engineer }
+\location{May 2019 - Dec 2021 | London, United Kingdom}
+\begin{tightemize}
+\sectionsep
+\item Led the platform migration from AngularJS 1.x to React, doubling application performance (2x speed improvement)
+\item Built a Django Admin alternative in JavaScript (React Admin, Hasura, GraphQL, Node.js, PostgreSQL); open-sourced the package internally used at the company: \href{https://github.com/mihaildu/ra-resource-aggregator}{\textbf{mihaildu/ra-resource-aggregator}}
+\item Developed static marketing websites for clients — \href{https://www.marlinhawk.com/}{\textbf{marlinhawk.com}} and \href{https://www.wintercircle.co/}{\textbf{wintercircle.co}} — using Gatsby, React, Netlify \& Netlify CMS, and Node.js
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2020	     & Finalist & Lorem Ipsum\\
+% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+% 2015	     & Finalist  & Cras posuere\\
+% \\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+\sectionsep
+Javascript/Typescript \textbullet{} Python \textbullet{} C/C++ \textbullet{} Java
+\sectionsep
+\subsection{Frontend}
+\sectionsep
+React \textbullet{} Next.js \textbullet{} Vue \textbullet{} TanStack \textbullet{} Zustand \textbullet{} UI Frameworks \textbullet{} Micro frontends
+\sectionsep
+\subsection{Backend}
+\sectionsep
+Node.js \textbullet{} NestJS \textbullet{} Express \textbullet{} Django \textbullet{} PostgreSQL \textbullet{} MongoDB \textbullet{} Redis
+\sectionsep
+\subsection{Mobile}
+\sectionsep
+React Native
+\sectionsep
+\subsection{APIs}
+\sectionsep
+REST, GraphQL
+\sectionsep
+\subsection{Infra}
+\sectionsep
+AWS (S3, EC2, RDS, EKS, Lambda), Google Cloud, Netlify
+\sectionsep
+\subsection{CI/CD}
+\sectionsep
+Github Actions, Fastlane
+\sectionsep
+\subsection{AI}
+\sectionsep
+Claude Code, Skills, Agents, MCP, OpenAI API
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     PROJECTS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects} 
+\textbf{Introduction to Fitness} \normalfont\textit{\href{https://github.com/mihaildu/fitness}{mihaildu/fitness}} 2022
+
+Open source book on fitness
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{The University of Edinburgh}
+\descript{MSc. in Artificial Intelligence}
+\location{2015 - 2016 | Edinburgh, United Kingdom}
+
+\sectionsep
+\subsection{Politehnica University of Bucharest}
+\descript{BSc. in Computer Science}
+\location{2010 - 2014 | Bucharest, Romania}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+
